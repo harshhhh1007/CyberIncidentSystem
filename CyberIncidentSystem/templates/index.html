@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>CyberGuard Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        <div class="logo-icon">
+            🛡
+        </div>
+
+        <div class="logo-text">
+            Cyber<span>Guard</span>
+        </div>
+
+    </div>
+
+
+    <div class="nav-title">
+        Main Menu
+    </div>
+
+
+    <a href="/" class="nav-link active">
+        🏠 <span>Dashboard</span>
+    </a>
+
+    <a href="/report" class="nav-link">
+        🚨 <span>Report Incident</span>
+    </a>
+
+    <a href="/incidents" class="nav-link">
+        📋 <span>Incidents</span>
+    </a>
+
+    <a href="/admin" class="nav-link">
+        ⚙️ <span>Admin Panel</span>
+    </a>
+
+</div>
+
+
+<!-- MAIN -->
+
+<div class="main">
+
+    <div class="topbar">
+
+        <div class="topbar-title">
+            Security Dashboard
+        </div>
+
+        <div class="user-area">
+
+            <span>Administrator</span>
+
+            <div class="avatar">
+                A
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="content">
+
+        <!-- WELCOME -->
+
+        <div class="welcome">
+
+            <h1>
+                Welcome to CyberGuard 👋
+            </h1>
+
+            <p>
+                Cyber Incident Reporting and Tracking System
+            </p>
+
+        </div>
+
+
+        <!-- STAT CARDS -->
+
+        <div class="stats">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🚨
+                </div>
+
+                <div>
+                    <h3>5</h3>
+                    <p>Total Incidents</p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🔍
+                </div>
+
+                <div>
+                    <h3>2</h3>
+                    <p>Under Investigation</p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    ✓
+                </div>
+
+                <div>
+                    <h3>1</h3>
+                    <p>Resolved Incidents</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUICK ACTIONS -->
+
+        <div class="page-heading">
+
+            <h1>Quick Actions</h1>
+
+            <p>
+                Manage cybersecurity incidents from here.
+            </p>
+
+        </div>
+
+
+        <div class="actions">
+
+            <div class="action-card">
+
+                <h3>🚨 Report a Cyber Incident</h3>
+
+                <p>
+                    Submit a new cybersecurity incident
+                    with its description, severity and location.
+                </p>
+
+                <a href="/report" class="btn">
+                    Report Incident
+                </a>
+
+            </div>
+
+
+            <div class="action-card">
+
+                <h3>📋 View Incident Records</h3>
+
+                <p>
+                    View all reported incidents and
+                    monitor their current status.
+                </p>
+
+                <a href="/incidents" class="btn btn-secondary">
+                    View Incidents
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        CyberGuard © 2026 | Cyber Incident Reporting System
+    </footer>
+
+</div>
+
+</body>
+
+</html>

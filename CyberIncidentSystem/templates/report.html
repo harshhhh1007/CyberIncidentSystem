@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Report Incident | CyberGuard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        <div class="logo-icon">🛡</div>
+
+        <div class="logo-text">
+            Cyber<span>Guard</span>
+        </div>
+
+    </div>
+
+    <div class="nav-title">Main Menu</div>
+
+    <a href="/" class="nav-link">
+        🏠 <span>Dashboard</span>
+    </a>
+
+    <a href="/report" class="nav-link active">
+        🚨 <span>Report Incident</span>
+    </a>
+
+    <a href="/incidents" class="nav-link">
+        📋 <span>Incidents</span>
+    </a>
+
+    <a href="/admin" class="nav-link">
+        ⚙️ <span>Admin Panel</span>
+    </a>
+
+</div>
+
+
+<div class="main">
+
+    <div class="topbar">
+        <div class="topbar-title">
+            Report Cyber Incident
+        </div>
+    </div>
+
+
+    <div class="content">
+
+        <div class="page-heading">
+
+            <h1>Report Incident</h1>
+
+            <p>
+                Enter the details of the cybersecurity incident.
+            </p>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <form method="POST">
+
+                <div class="form-group">
+
+                    <label>Incident Title</label>
+
+                    <input type="text"
+                           name="title"
+                           placeholder="Example: Suspicious Email"
+                           required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Incident Type</label>
+
+                    <select name="incident_type">
+
+                        <option>Phishing</option>
+                        <option>Malware</option>
+                        <option>Hacking</option>
+                        <option>Cyber Fraud</option>
+                        <option>Other</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Description</label>
+
+                    <textarea name="description"
+                              rows="5"
+                              placeholder="Describe the incident..."></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Severity</label>
+
+                    <select name="severity">
+
+                        <option>Low</option>
+                        <option>Medium</option>
+                        <option>High</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Location</label>
+
+                    <input type="text"
+                           name="location"
+                           placeholder="Example: Pune"
+                           required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Incident Date</label>
+
+                    <input type="date"
+                           name="incident_date"
+                           required>
+
+                </div>
+
+
+                <button type="submit" class="btn">
+                    Submit Incident
+                </button>
+
+                <a href="/" class="btn btn-secondary">
+                    Cancel
+                </a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
